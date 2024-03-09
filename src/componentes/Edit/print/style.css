@@ -1,0 +1,18 @@
+.person-list input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.person-list p{
+    border: 3px solid transparent;
+    border-radius: 5px;
+    font-size: 22px;
+    padding: 2px;
+    width: 100px;
+}
+
+.person-list input[type="checkbox"]:checked + p {
+    border-color: #4a40d3;
+}

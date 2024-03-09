@@ -1,0 +1,59 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    background-color: #4a40d3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #634ec1;
+}
+
+  .product-list {
+    margin-top: 20px;
+  }
+
+  .product-item {
+    margin-bottom: 10px;
+  }
+
+  .product-item input{
+    margin: 5px;
+  }
+
+  .people-select{
+    margin: 5px;
+    width: 50px;
+  }

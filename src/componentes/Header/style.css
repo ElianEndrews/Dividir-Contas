@@ -1,0 +1,35 @@
+header {
+    background-color: #4a40d3;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .buttons-container {
+    display: flex;
+  }
+
+  .edit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-left: 10px;
+  }
+
+  .edit-button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+  }
+
+  .delete-button{
+    background-color: #ff2a1f;
+  }
+
+  .delete-button:hover{
+    background-color: #b71007;
+  }

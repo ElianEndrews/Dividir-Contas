@@ -1,0 +1,89 @@
+.formulario-container {
+    padding: 10px 10px 0px 10px;
+    height: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 20%;
+  }
+
+.dados{
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.valor-total{
+    font-size: 40px;
+    margin-left: auto;
+    font-family: 'roboto';
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox div{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.checkbox label {
+    display: flex!important;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+.checkbox p{
+    border: 3px solid transparent;
+    border-radius: 5px;
+    font-size: 22px;
+    padding: 2px;
+    width: 100px;
+}
+.checkbox input[type="checkbox"]:checked + p {
+    border-color: #4a40d3;
+}
+
+.formulario-container label {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.formulario-container input[type="text"],
+.formulario-container input[type="number"]{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-container button {
+    padding: 10px 20px;
+    background-color: #4a40d3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-container button:hover {
+    background-color: #215d9d;
+}
+
+.formulario-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+

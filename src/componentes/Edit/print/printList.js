@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 import jsPDF from 'jspdf';
+import 'jspdf-autotable';
 
 
 export const PrintList = ({ cardNames: initialCardNames, onClose, products }) => {

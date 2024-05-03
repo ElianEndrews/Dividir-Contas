@@ -58,7 +58,7 @@ export default function Card({ name, data, totalCards }) {
             <tr key={index} style={{ color: colorFilter(produto.id) }}>
               <td >{limitarTexto(produto.nome)}</td>
               <td>{produto.id_produto + 1}</td>
-              <td>R$ {(produto.id.includes(0) ? produto.valor / 3 : produto.valor / produto.id.length).toFixed(2)}</td>
+              <td>R$ {(produto.valor / totalCards).toFixed(2)}</td>
             </tr>
           ))}
         </tbody>

@@ -89,6 +89,7 @@
                 value={precoProduto}
                 onChange={(e) => setPrecoProduto(e.target.value)}
                 required
+                step="0.01" // Permite números com até duas casas decimais
               />
             </label>
           </div>

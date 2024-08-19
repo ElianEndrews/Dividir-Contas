@@ -8,7 +8,7 @@ export default function Card({ name, data, totalCards }) {
   };
 
   const colorFilter = (pessoa) =>{
-    if(pessoa == 0){
+    if(Number(pessoa) === 0){
       return '#2ecc71';
     }else if(pessoa.length > 1){
       return '#f39c12';
@@ -58,7 +58,7 @@ export default function Card({ name, data, totalCards }) {
             <tr key={index} style={{ color: colorFilter(produto.id) }}>
               <td >{limitarTexto(produto.nome)}</td>
               <td>{produto.id_produto + 1}</td>
-              <td>R$ {(produto.valor / totalCards).toFixed(2)}</td>
+              <td>R$ {(produto.valor / (Number(produto.id) !== 0 ? produto.id.length : totalCards)).toFixed(2)}</td>
             </tr>
           ))}
         </tbody>
